@@ -8,7 +8,8 @@ return<div className="Weather">
            <div className="col-9">
         <input type="search"
          placeholder="Enter a City"
-         className="form-control"/></div>
+         className="form-control"
+         autoFocus="on"/></div>
          <div className="col-3">
         <input  type="submit" value="search"
         className="btn btn-primary"/></div></div>
@@ -20,8 +21,10 @@ return<div className="Weather">
         </ul>
         <div className="row">
             <div className="col-6">
-                <img  src="https://ssl.gstatic.com/onebox/weather/64/fog.png"alt="mostly cloudy"/>
-                6°C
+             <img  src="https://ssl.gstatic.com/onebox/weather/64/fog.png"alt="mostly cloudy"
+                />
+               <span className="temperature"> 6</span>
+               <span className="unit">°C</span>
             </div>
             <div className="col-6">
                 <ul>
