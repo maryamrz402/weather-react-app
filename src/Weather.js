@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
+import { SpinnerCircular } from 'spinners-react';
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,8 +15,7 @@ export default function Weather(props) {
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      iconUrl:
-        "http://shecodes-assets.s3.amazonaws.com/api/weather/${response.data.condition.icon}.png",
+      icon:response.data.condition.icon,
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       city: response.data.city,
@@ -59,6 +59,12 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "loading...";
+
+    return (
+      <div className="spinner">
+    <SpinnerCircular size={100} thickness={200} speed={100} color="blue" secondaryColor="rgba(0, 0, 0, 0.44)" />
+    </div>
+    
+    );
   }
 }
