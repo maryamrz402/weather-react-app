@@ -7,8 +7,8 @@ export default function App() {
       <div className="container">
       
       <Weather defaultCity="london"/>
-      <footer>
-        This project was coded by Maryam Reyhanian and is
+      <footer className='text-center'>
+      This project coded by <a href="https://idyllic-quokka-efbe77.netlify.app"title='Maryam Reyhanian'> Maryam Reyhanian</a> and {""}
       <a 
       href= "https://github.com/maryamrz402/weather-react-app"
     >
