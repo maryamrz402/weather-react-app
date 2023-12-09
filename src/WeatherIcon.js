@@ -3,7 +3,7 @@ import { WeatherSvg } from "weather-icons-animated";
 
 export default  function weatherIcon(props){
     const codeMapping ={
-       "clear-sky-day":"sunny",
+      "clear-sky-day":"sunny",
        "clear-sky-night":"clear-night",
        "few-clouds-day":"partlycloudy",
        "few-clouds-night":"partlycloudy",
@@ -26,7 +26,7 @@ export default  function weatherIcon(props){
 
     };
     
-      return <WeatherSvg state={codeMapping[props.code]} width={100} height={100} />;
+      return <WeatherSvg state={codeMapping[props.code]}  height={props.height} />;
      
    
 }
