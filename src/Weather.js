@@ -51,7 +51,7 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="search" className="btn btn-primary" />
+              <input type="submit" value="search" className="btn btn-light" />
             </div>
           </div>
         </form>
@@ -64,7 +64,7 @@ export default function Weather(props) {
 
     return (
       <div className="spinner">
-    <SpinnerCircular size={100} thickness={200} speed={100} color="8ed6ff" secondaryColor="rgba(0, 0, 0, 0.44)" />
+    <SpinnerCircular size={100} thickness={200} speed={100} color="#8ed6ff" secondaryColor="#152744" />
     </div>
     
     );
