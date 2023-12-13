@@ -64,7 +64,7 @@ export default function Weather(props) {
 
     return (
       <div className="spinner">
-    <SpinnerCircular size={100} thickness={200} speed={100} color="#8ed6ff" secondaryColor="#152744" />
+    <SpinnerCircular size={100} thickness={200} speed={100} color="#ececec" secondaryColor="rgb(37, 57, 73)" />
     </div>
     
     );
